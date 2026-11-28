@@ -1,0 +1,7 @@
+Pregunta de defensa en clase: «¿Qué tendrías que hacer si MisUtiles usara a su vez otra librería?».
+
+Respuesta:
+
+Como un JAR normal no guarda dentro las librerías externas que utiliza, si MisUtiles usara otra librería y yo solo meto mis-utiles.jar en ProyectoPrincipal, el programa fallaría al ejecutarse porque no la encontraría.
+
+Para arreglarlo sin Maven tendría que añadir también ese segundo JAR a mano en el Build Path de Eclipse (o en Libraries de NetBeans) de ProyectoPrincipal, o bien juntar todas las clases de ambas librerías en un solo JAR (Fat JAR). Justo ese lío de ir arrastrando librerías a mano es lo que nos ahorran herramientas como Maven.»
